@@ -14,3 +14,7 @@
 # Avoid your project being littered with annoying .DS_Store files!
 .DS_Store
 .prettierignore
+
+# Additional files we want to ignore
+README-template.md
+style-guide.md
