@@ -1,7 +1,22 @@
-.container {
-    background-color: red;
+.main-container {
+  background-color: white;
+  display: flex;
+  justify-content: center;
 }
 
-.main-content {
+.container {
+    display: flex;
+    justify-content: center;
+    max-height: 500px;
+    max-width: 50%;
+    background-color: hsl(234, 29%, 20%);
+}
+
+.content-box {
+    height: 50%;
+    width: 300px;
+    padding: 40px;
     background-color: white;
+    border-radius: 10px;
+    text-align: center;
 }
