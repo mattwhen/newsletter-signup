@@ -11,24 +11,35 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: hsl(234, 29%, 20%);
-  font-family: Roboto-Regular;
 }
 
 .form-title {
   font-family: Roboto-Bold;
+  font-weight: 700;
   font-size: 50px;
+  padding-bottom: 20px;
 }
 
 .panel {
     background-color: white;
+    font-family: Roboto-Regular;
+    font-size: 16px;
+    font-weight: 400;
     display: flex;
     height: 600px;
     padding: 18px 18px 15px 10px;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     border-radius: 10px;
-    /* max-height: 1000px;
-    max-width: 50%; */
+}
+ ul {
+  text-align: left;
+ }
+
+ input::placeholder {
+  font-weight: bold !important;
+  opacity: 0.5 !important;
+  color: gray !important;
 }
 
 .content-box {
@@ -52,4 +63,8 @@ footer {
 @font-face {
   font-family: Roboto-Bold;
   src: url('./assets/fonts/Roboto-Bold.ttf');
+}
+
+@media (min-width: 375px) {
+  
 }
