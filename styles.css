@@ -1,22 +1,55 @@
-.main-container {
-  background-color: white;
+/* .main-container {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 500px;
+} */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(234, 29%, 20%);
+  font-family: Roboto-Regular;
 }
 
-.container {
+.form-title {
+  font-family: Roboto-Bold;
+  font-size: 50px;
+}
+
+.panel {
+    background-color: white;
     display: flex;
-    justify-content: center;
-    max-height: 500px;
-    max-width: 50%;
-    background-color: hsl(234, 29%, 20%);
+    height: 600px;
+    padding: 18px 18px 15px 10px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    /* max-height: 1000px;
+    max-width: 50%; */
 }
 
 .content-box {
-    height: 50%;
-    width: 300px;
     padding: 40px;
-    background-color: white;
-    border-radius: 10px;
     text-align: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  color: white;
+  font-family: Roboto-Regular;
+  padding: 15px;
+}
+
+@font-face {
+  font-family: Roboto-Regular;
+  src: url('./assets/fonts/Roboto-Regular.ttf');
+}
+ 
+@font-face {
+  font-family: Roboto-Bold;
+  src: url('./assets/fonts/Roboto-Bold.ttf');
 }
