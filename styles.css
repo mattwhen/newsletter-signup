@@ -26,15 +26,27 @@ body {
     font-size: 16px;
     font-weight: 400;
     display: flex;
-    height: 600px;
-    padding: 18px 18px 15px 10px;
+    height: 630px;
+    padding: 20px;
     width: 100%;
     max-width: 900px;
-    border-radius: 10px;
+    border-radius: 30px;
 }
- ul {
+ .feature-list {
   text-align: left;
  }
+
+ form {
+  text-align: left;
+ }
+
+.btn {
+  width: 100%;
+  margin-top: 20px;
+  background-color: hsl(235, 18%, 26%);
+  padding: 10px;
+  font-size: 16px;
+}
 
  input::placeholder {
   font-weight: bold !important;
