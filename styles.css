@@ -25,8 +25,25 @@ body {
     max-width: 900px;
     border-radius: 30px;
 }
- .feature-list {
+li {
+  line-height: 35px;
+}
+
+.inner-content {
   text-align: left;
+}
+
+span {
+  position: relative;
+  left: 10px;
+}
+ .b-list {
+  text-align: left;
+  padding: 0px;
+ }
+
+ .mb-3 {
+  padding-top: 30px
  }
 
  form {
@@ -37,8 +54,9 @@ body {
   width: 100%;
   margin-top: 20px;
   background-color: hsl(235, 18%, 26%);
-  padding: 10px;
+  padding: 18px 10px;
   font-size: 16px;
+  font-weight: 700;
 }
 
 .mobile-image {
@@ -78,19 +96,43 @@ footer {
   html, body {
     background-color: white;
   }
+
+  .form-title {
+    font-size: 40px;
+  }
   
   .panel {
     height: 100%;
+    width: 100%;
     display: flex;
+    padding: 0px;
     flex-direction: column;
   }
-
+  .content-box {
+    padding: 0px;
+  }
   .desktop-image {
     display: none;
   }
 
+  .inner-content {
+    padding: 25px 20px;
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  ul {
+    list-style-position: outside;
+  }
+
   .mobile-image {
     display: block;
-
+    width: 0px;
   }
+
+  footer {
+    display: none;
+  }
+
+ 
 }
