@@ -7,7 +7,7 @@ body {
 }
 
 .form-title {
-  font-family: Roboto-Bold;
+  /* font-family: Roboto-Bold; */
   font-weight: 700;
   font-size: 50px;
   padding-bottom: 20px;
@@ -15,7 +15,7 @@ body {
 
 .panel {
     background-color: white;
-    font-family: Roboto-Regular;
+    /* font-family: Roboto-Regular; */
     font-size: 16px;
     font-weight: 400;
     display: flex;
@@ -29,7 +29,7 @@ li {
   line-height: 35px;
 }
 
-.inner-content {
+.feature-list {
   text-align: left;
 }
 
@@ -37,28 +37,34 @@ span {
   position: relative;
   left: 10px;
 }
- .b-list {
+
+.b-list {
   text-align: left;
   padding: 0px;
- }
+}
 
- .mb-3 {
+.mb-3 {
   padding-top: 30px
- }
+}
 
- form {
-  text-align: left;
- }
+form {
+  font-size: 14px;
+}
 
-.btn {
+#submitBtn {
   width: 100%;
   margin-top: 20px;
   background-color: hsl(235, 18%, 26%);
   padding: 18px 10px;
   font-size: 16px;
   font-weight: 700;
+  /* font-family: Roboto-Regular; */
 }
 
+#submitBtn:hover {
+  background-color: hsl(4, 100%, 67%);
+  cursor: pointer;
+}
 .mobile-image {
   display: none;
 }
@@ -71,14 +77,18 @@ span {
 
 .content-box {
     padding: 40px;
-    text-align: center;
+}
+
+.form-heading {
+  display: flex;
+  justify-content: space-between;
 }
 
 footer {
   position: fixed;
   bottom: 0;
   color: white;
-  font-family: Roboto-Regular;
+  /* font-family: Roboto-Regular; */
   padding: 15px;
 }
 
