@@ -1,18 +1,17 @@
-const submitForm = document.getElementById('submit-form');
+const submitForm = document.getElementById('subscribe');
 const emailEl = document.getElementById('input-email');
 
-submitForm.addEventListener('click', (event) => {
-    event.preventDefault(); // prevents the form from submitting by default, once the Subscribe button is clicked. 
+submitForm.addEventListener('submit', validateForm);
 
-    if(emailEl.value === '')  {
-        showError();
-    }  
-    console.log(event.target);
-});
+function validateForm(e) {
+    e.preventDefault();
+
+    isEmailValid(emailEl.value);
+}
 
 const isEmailValid = (email) => {
     const regExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return regExp.test(email); // tests email validation
+    return regExp.test(email); // tests email validation and returns either 'True' or 'False'. 
 }
 
 const showError = () => {
