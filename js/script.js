@@ -1,3 +1,4 @@
+/* FORM VALIDATION */
 const submitForm = document.getElementById('subscribe');
 const emailEl = document.getElementById('input-email');
 const errorMessage = document.getElementById('error-message');
@@ -5,13 +6,9 @@ const errorMessage = document.getElementById('error-message');
 submitForm.addEventListener('submit', validateForm);
 
 function validateForm(e) {
-    e.preventDefault();
-
-    if(emailEl.value.trim() === '') {
-        showError();
-    }
-
-    console.log('is email valid?', isEmailValid(emailEl.value));
+    e.preventDefault(); // Prevent default behavior when submitting form. 
+    // IF user clicks the button with no content in it, throw an error. 
+    return emailEl.value.trim() === '' ? showError() : showSuccess();
 }
 
 const isEmailValid = (email) => {
@@ -31,4 +28,5 @@ function showError() {
 function showSuccess() {
     emailEl.classList.remove('error');
     emailEl.classList.add('success');
+    errorMessage.style.display = 'none'
 }

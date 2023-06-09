@@ -43,7 +43,6 @@ li {
  display: none;
 }
 
-
 .mb-3 {
   padding-top: 30px;
   width: 350px;
@@ -85,6 +84,10 @@ form {
 
 #input-email.error {
   border-color: var(--error-color);
+}
+
+#input-email.success {
+  border-color: var(--success-color);
 }
 
 .content-box {
