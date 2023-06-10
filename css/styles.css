@@ -9,10 +9,10 @@ body {
   align-items: center;
   min-height: 100vh;
   background-color: hsl(234, 29%, 20%);
+  font-family: Roboto-Regular;
 }
 
 .form-title {
-  /* font-family: Roboto-Bold; */
   font-weight: 700;
   font-size: 55px;
   padding-top: 20px;
