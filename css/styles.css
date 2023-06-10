@@ -85,6 +85,7 @@ form {
 
 #input-email.error {
   border-color: var(--error-color);
+  background-color: #ffcad4;
 }
 
 #input-email.success {
