@@ -1,6 +1,5 @@
-# Frontend Mentor - Newsletter sign-up form with success message solution
+# Newsletter sign-up form 
 
-This is a solution to the [Newsletter sign-up form with success message challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/newsletter-signup-form-with-success-message-3FC1AZbNrv). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -16,38 +15,38 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
-### The challenge
+In this project, we created a simple Frontend UI that allows a user to subscribe to a newsletter. This project involves form validation that checks to see if the email is valid, or if the input field is NOT left blank. 
 
-Users should be able to:
+If the email is valid upon submission, the webpage is then rendered with new content on the page, displaying that they have successfully subscribed using their email. 
 
-- Add their email and submit the form
-- See a success message with their email after successfully submitting the form
-- See form validation messages if:
-  - The field is left empty
-  - The email address is not formatted correctly
-- View the optimal layout for the interface depending on their device's screen size
-- See hover and focus states for all interactive elements on the page
+## The challenge
 
+### User Story
+
+```
+AS a user
+I WANT to subscribe to a newsletter using my email address
+SO THAT I can receive newsletters to my email
+```
+
+### Acceptance Criteria
+
+```
+GIVEN a pretty user interface
+WHEN I input my email and click on the button
+THEN I am presented with new content on the page that displays that I successfully subscribed
+```
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](./assets/images/newsletter-homepage.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Github Repo URL](https://github.com/mattwhen/newsletter-signup)
+- [Deployed application](https://mattwhen.github.io/newsletter-signup/)
 
 ## My process
 
@@ -57,12 +56,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS custom properties
 - Flexbox
 - CSS Grid
+- Vanilla Javascript
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
+- Bootstrap
 
 ### What I learned
 
@@ -84,15 +80,9 @@ const proudOfThisFunc = () => {
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
-
 ### Continued development
 
 Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
@@ -102,9 +92,10 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Matthew Nguyen](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [matt_alexanderr](https://twitter.com/matt_alexanderr)
+- [Matthew A. Nguyen]()
+- [Frontend Mentor](https://www.frontendmentor.io/profile/yourusername)
+- [Twitter](https://twitter.com/matt_alexanderr)
+- [LinkedIn](https://www.linkedin.com/in/matthew-nguyen-1724b9132/)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
