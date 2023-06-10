@@ -15,6 +15,7 @@ body {
   /* font-family: Roboto-Bold; */
   font-weight: 700;
   font-size: 55px;
+  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -52,7 +53,7 @@ form {
   font-size: 14px;
 }
 
-#submitBtn {
+.submitBtn {
   width: 100%;
   margin-top: 20px;
   background-color: hsl(235, 18%, 26%);
@@ -63,7 +64,7 @@ form {
   /* font-family: Roboto-Regular; */
 }
 
-#submitBtn:hover {
+.submitBtn:hover {
   background-color: hsl(4, 100%, 67%);
   cursor: pointer;
 }
