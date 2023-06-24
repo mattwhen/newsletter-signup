@@ -1,7 +1,6 @@
 /* FORM VALIDATION */
 const submitForm = document.getElementById('subscribe');
 const emailEl = document.getElementById('input-email');
-const emailElValue = document.getElementById('input-email').value;
 const errorMessage = document.getElementById('error-message');
 const panel = document.querySelector('.panel');
 
@@ -38,28 +37,32 @@ function showSuccess() {
 function renderSuccessContent() {
 	// Removes existing content inside panel.
 	panel.textContent = '';
-	panel.classList.remove('panel');
 
 	// Create elements
 	let createCheckmark = document.createElement('img');
-	createCheckmark.src = '../assets/images/icon-success.svg';
+	createCheckmark.src = './assets/images/icon-success.svg';
 	let createTitle = document.createElement('h1');
 	let createP = document.createElement('p');
 	let createBtn = document.createElement('button');
 
-	// Modify class attributes
-	panel.setAttribute(
-		'style',
-		'height: 500px; width: 500px; background-color: white; border-radius: 30px; font-size: 16px; padding: 50px;'
-	);
+	// Add classes to elements
 	createBtn.classList.add('btn-primary');
 	createBtn.classList.add('btn');
 	createBtn.classList.add('submitBtn');
 	createTitle.classList.add('form-title');
 
+	// Modify class attributes
+	panel.setAttribute(
+		'style',
+		'display: flex; flex-direction: column; justify-content: center; padding: 20px; min-height: 600px'
+	);
+	createCheckmark.setAttribute('style','width: 50px;')
+	createBtn.setAttribute('style', 'position: absolute; bottom: 40px; width: 90%');
+
+
 	// Add text content
 	createTitle.textContent = 'Thanks for subscribing!';
-	createP.textContent = `A confirmation email has been sent to ${emailEl.value}. Please open it and click the button inside to confirm your subscription.`;
+	createP.textContent = "A confirmation email has been sent to " +  emailEl.value + " Please open it and click the button inside to confirm your subscription.";
 	createBtn.textContent = 'Dismiss message';
 
 	// Refresh page after dismissing the page
