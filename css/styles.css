@@ -13,15 +13,19 @@ body {
 }
 
 .form-title {
-  font-weight: 700;
+  font-weight: 900 !important;
   font-size: 55px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
+
+.desktop-image {
+  display: flex;
+}
+
 .panel {
     background-color: white;
-    /* font-family: Roboto-Regular; */
     font-size: 16px;
     font-weight: 400;
     display: flex;
@@ -35,10 +39,16 @@ li {
   line-height: 35px;
 }
 
+.checkmark {
+  display: inline-block;
+  margin-right: 10px;
+}
+
 .feature-list {
   /* text-align: left; */
   padding-left: 0px;
 }
+
 
 #error-message {
  display: none;
@@ -61,7 +71,6 @@ form {
   padding: 18px 10px;
   font-size: 16px;
   font-weight: 700;
-  /* font-family: Roboto-Regular; */
 }
 
 .submitBtn:hover {
@@ -110,7 +119,7 @@ footer {
 
 @font-face {
   font-family: Roboto-Regular;
-  src: url('./assets/fonts/Roboto-Regular.ttf');
+  src: url(../assets/fonts/Roboto-Regular.ttf)
 }
  
 @font-face {
@@ -118,9 +127,11 @@ footer {
   src: url('./assets/fonts/Roboto-Bold.ttf');
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
   html, body {
     background-color: white;
+    display: block;
+    min-height: 0px;
   }
 
   .form-title {
@@ -129,21 +140,22 @@ footer {
   
   .panel {
     height: 100%;
-    width: 100%;
+    width: 375px;
     display: flex;
+    padding: 0px;
     flex-direction: column;
   }
   .content-box {
     padding: 0px;
+    margin-top: 0px;
   }
   .desktop-image {
     display: none;
   }
 
   .inner-content {
-    padding: 25px 20px;
     text-align: left;
-    margin-left: 10px;
+    margin-left: 20px;
   }
 
   ul {
