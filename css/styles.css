@@ -127,7 +127,11 @@ footer {
   src: url('./assets/fonts/Roboto-Bold.ttf');
 }
 
-@media screen and (max-width: 390px) {
+@media only screen 
+and (min-device-width: 320px)
+and (max-width: 480px) 
+and (-webkit-min-device-pixel-ratio: 2) {
+
   html, body {
     background-color: white;
     display: block;
@@ -176,6 +180,5 @@ footer {
   footer {
     display: none;
   }
-
- 
+  
 }
