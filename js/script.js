@@ -50,7 +50,7 @@ function renderSuccessContent() {
 	// Modify class attributes
 	panel.setAttribute(
 		'style',
-		'height: 500px; width: 500px; background-color: white; border-radius: 30px; font-size: 16px; padding: 50px;'
+		'margin-top: 50px; background-color: white; border-radius: 30px; font-size: 16px; padding: 50px;'
 	);
 	createBtn.classList.add('btn-primary');
 	createBtn.classList.add('btn');
