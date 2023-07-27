@@ -44,6 +44,7 @@ function renderSuccessContent() {
 	let createTitle = document.createElement('h1');
 	let createP = document.createElement('p');
 	let createBtn = document.createElement('button');
+	let createDiv = document.createElement('div');
 
 	// Add classes to elements
 	createBtn.classList.add('btn-primary');
@@ -54,10 +55,11 @@ function renderSuccessContent() {
 	// Modify class attributes
 	panel.setAttribute(
 		'style',
-		'display: flex; flex-direction: column; justify-content: center; padding: 20px; min-height: 600px'
+		'display: flex; flex-direction: column; justify-content: center; padding: 50px; min-height: 600px; max-width: 500px'
 	);
 	createCheckmark.setAttribute('style','width: 50px;')
-	createBtn.setAttribute('style', 'position: absolute; bottom: 40px; width: 90%');
+	createBtn.setAttribute('style', 'bottom: 40px; width: 90%');
+	createDiv.setAttribute('style', 'display: flex; justify-content: center');
 
 
 	// Add text content
@@ -77,5 +79,6 @@ function renderSuccessContent() {
 	panel.appendChild(createCheckmark);
 	panel.appendChild(createTitle);
 	panel.appendChild(createP);
-	panel.appendChild(createBtn);
+	panel.appendChild(createDiv)
+	createDiv.appendChild(createBtn);
 }
